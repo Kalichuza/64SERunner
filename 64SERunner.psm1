@@ -43,5 +43,29 @@ function Run-Base64EncodedScript {
     }
 }
 
+function EncodeAndRun-Script {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$ScriptPath
+    )
+
+    process {
+        if (-not (Test-Path $ScriptPath)) {
+            Write-Error "Script not found: $ScriptPath"
+            return
+        }
+
+        # Encode the script
+        Encode-ScriptToBase64 -ScriptPath $ScriptPath
+
+        # Generate the path for the encoded script
+        $encodedScriptPath = "$ScriptPath.64SE"
+
+        # Run the encoded script
+        Run-Base64EncodedScript -EncodedScriptPath $encodedScriptPath
+    }
+}
+
 # Exporting functions
-Export-ModuleMember -Function Encode-ScriptToBase64, Run-Base64EncodedScript
+Export-ModuleMember -Function Encode-ScriptToBase64, Run-Base64EncodedScript, EncodeAndRun-Script

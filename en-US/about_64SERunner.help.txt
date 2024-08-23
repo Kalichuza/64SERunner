@@ -1,0 +1,25 @@
+TOPIC
+    about_64SERunner
+
+SHORT DESCRIPTION
+    64SERunner is a PowerShell module for encoding PowerShell scripts to Base64 and running Base64-encoded scripts.
+
+LONG DESCRIPTION
+    The 64SERunner module provides functions to encode PowerShell scripts into Base64 format and to run those encoded scripts.
+    This is useful for securely transmitting scripts or storing them in a non-executable form.
+
+    The module contains the following cmdlets:
+    - Encode-ScriptToBase64
+    - Run-Base64EncodedScript
+    - EncodeAndRun-Script
+
+EXAMPLES
+    For examples of how to use these cmdlets, see the detailed help for each cmdlet using `Get-Help <cmdlet-name> -Examples`.
+
+SEE ALSO
+    - Encode-ScriptToBase64
+    - Run-Base64EncodedScript
+    - EncodeAndRun-Script
+
+KEYWORDS
+    Base64, Encoding, Decoding, PowerShell, Script, Security

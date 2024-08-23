@@ -1,0 +1,75 @@
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+                 xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10"
+                 xmlns:dev="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <command:details>
+        <command:name>Run-Base64EncodedScript</command:name>
+        <maml:description>
+            <maml:para>Decodes and runs a Base64-encoded PowerShell script.</maml:para>
+        </maml:description>
+        <command:verb>Run</command:verb>
+        <command:noun>Base64EncodedScript</command:noun>
+        <command:version>1.0.0</command:version>
+    </command:details>
+    <command:syntax>
+        <command:syntaxItem>
+            <maml:name>Run-Base64EncodedScript</maml:name>
+            <command:parameter required="true" position="0" globbing="false">
+                <maml:name>EncodedScriptPath</maml:name>
+                <maml:description>
+                    <maml:para>The path to the file containing the Base64-encoded PowerShell script.</maml:para>
+                </maml:description>
+                <command:parameterValue required="true" variableLength="false" type="System.String" />
+            </command:parameter>
+        </command:syntaxItem>
+    </command:syntax>
+    <command:description>
+        <maml:para>This cmdlet decodes and runs a Base64-encoded PowerShell script.</maml:para>
+    </command:description>
+    <command:examples>
+        <command:example>
+            <maml:para>EXAMPLE 1</maml:para>
+            <maml:code>Run-Base64EncodedScript -EncodedScriptPath "C:\path\to\yourscript.ps1.64SE"</maml:code>
+            <maml:remarks>
+                <maml:para>Decodes and executes the script stored in "C:\path\to\yoursIt looks like my previous response was interrupted. I'll continue with the final updates for the `64SERunner` module.
+
+### Help File for `Run-Base64EncodedScript`: `Run-Base64EncodedScript.help.xml`
+
+```xml
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+                 xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10"
+                 xmlns:dev="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <command:details>
+        <command:name>Run-Base64EncodedScript</command:name>
+        <maml:description>
+            <maml:para>Decodes and runs a Base64-encoded PowerShell script.</maml:para>
+        </maml:description>
+        <command:verb>Run</command:verb>
+        <command:noun>Base64EncodedScript</command:noun>
+        <command:version>1.0.0</command:version>
+    </command:details>
+    <command:syntax>
+        <command:syntaxItem>
+            <maml:name>Run-Base64EncodedScript</maml:name>
+            <command:parameter required="true" position="0" globbing="false">
+                <maml:name>EncodedScriptPath</maml:name>
+                <maml:description>
+                    <maml:para>The path to the file containing the Base64-encoded PowerShell script.</maml:para>
+                </maml:description>
+                <command:parameterValue required="true" variableLength="false" type="System.String" />
+            </command:parameter>
+        </command:syntaxItem>
+    </command:syntax>
+    <command:description>
+        <maml:para>This cmdlet decodes and runs a Base64-encoded PowerShell script.</maml:para>
+    </command:description>
+    <command:examples>
+        <command:example>
+            <maml:para>EXAMPLE 1</maml:para>
+            <maml:code>Run-Base64EncodedScript -EncodedScriptPath "C:\path\to\yourscript.ps1.64SE"</maml:code>
+            <maml:remarks>
+                <maml:para>Decodes and executes the script stored in "C:\path\to\yourscript.ps1.64SE".</maml:para>
+            </maml:remarks>
+        </command:example>
+    </command:examples>
+    <command:relatedLinks />
+</command:command>

@@ -1,0 +1,38 @@
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+                 xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10"
+                 xmlns:dev="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <command:details>
+        <command:name>Encode-ScriptToBase64</command:name>
+        <maml:description>
+            <maml:para>Encodes the contents of a specified PowerShell script file into a Base64 string and saves the output to a .64SE file.</maml:para>
+        </maml:description>
+        <command:verb>Encode</command:verb>
+        <command:noun>ScriptToBase64</command:noun>
+        <command:version>1.0.0</command:version>
+    </command:details>
+    <command:syntax>
+        <command:syntaxItem>
+            <maml:name>Encode-ScriptToBase64</maml:name>
+            <command:parameter required="true" position="0" globbing="false">
+                <maml:name>ScriptPath</maml:name>
+                <maml:description>
+                    <maml:para>The path to the PowerShell script file to be encoded.</maml:para>
+                </maml:description>
+                <command:parameterValue required="true" variableLength="false" type="System.String" />
+            </command:parameter>
+        </command:syntaxItem>
+    </command:syntax>
+    <command:description>
+        <maml:para>This cmdlet encodes the contents of a specified PowerShell script file into a Base64 string and saves the output to a .64SE file.</maml:para>
+    </command:description>
+    <command:examples>
+        <command:example>
+            <maml:para>EXAMPLE 1</maml:para>
+            <maml:code>Encode-ScriptToBase64 -ScriptPath "C:\path\to\yourscript.ps1"</maml:code>
+            <maml:remarks>
+                <maml:para>Encodes the script at "C:\path\to\yourscript.ps1" and saves it as "C:\path\to\yourscript.ps1.64SE".</maml:para>
+            </maml:remarks>
+        </command:example>
+    </command:examples>
+    <command:relatedLinks />
+</command:command>
